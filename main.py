@@ -48,6 +48,7 @@ for period in periods:
 timestamp = datetime.now()
 formatted_timestamp = timestamp.strftime("%m%d%Y_%H%M%S")
 file = open('./menu/menu_{}.json'.format(formatted_timestamp), 'w')
+file = open('menu.json', 'w')
 file.write(json.dumps(output))
 file.close()
 # pprint(output)
